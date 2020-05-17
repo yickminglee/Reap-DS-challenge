@@ -1,69 +1,62 @@
-# Data Scientist Challenge
 
-Assume you are working in a credit card company that is expecting a recession in the near future. The company would like to maintain a certain percentage of credit card defaults out of all the users. You will work on a dataset for the set of credit card users and predict the probability of credit card defaults.
+## How to run the Jupyter Notebooks
+### python 3.6.7 package requirement:
+ppnope==0.1.0
+backcall==0.1.0
+certifi==2020.4.5.1
+chardet==3.0.4
+conda==4.3.16
+cycler==0.10.0
+decorator==4.4.2
+idna==2.9
+ipython==7.14.0
+ipython-genutils==0.2.0
+jedi==0.17.0
+joblib==0.15.1
+kiwisolver==1.2.0
+matplotlib==3.2.1
+numpy==1.18.4
+pandas==1.0.3
+parso==0.7.0
+pexpect==4.8.0
+pickleshare==0.7.5
+prompt-toolkit==3.0.5
+ptyprocess==0.6.0
+pycosat==0.6.3
+Pygments==2.6.1
+pyparsing==2.4.7
+python-dateutil==2.8.1
+pytz==2020.1
+requests==2.23.0
+ruamel.yaml==0.16.10
+ruamel.yaml.clib==0.2.0
+scikit-learn==0.23.0
+scipy==1.4.1
+Shapely==1.7.0
+six==1.14.0
+threadpoolctl==2.0.0
+tqdm==4.46.0
+traitlets==4.3.3
+urllib3==1.25.9
+wcwidth==0.1.9
 
-## Dataset
 
-This dataset contains information on default payments, demographic factors, credit data, history of payments, and bill statements of credit card clients in Taiwan from April 2005 to September 2005.
+## Jupyter Notebook for Exploratory Data Analysis
+1. Load data and check columns
+2. Calculate the percentage of credit card defaults out of all the users
+3. Explore the whole dataset and find any interesting insights. At the same time, 
+    - evaluate the data quality 
+    - figure out whether outliers exist
+    - Clean Data
+4. Create baseline model
+5. Perform feature engineering
+6. Quick fit and Select the strongest predictors
 
-## Part 1: Exploratory Data Analysis
 
-- Explore the whole dataset and find any interesting insights
-- Evaluate the data quality and figure out whether outliners exist
-- Select the strongest predictors and perform feature engineering
-
-## Part 2: Prediction Modeling
-
-- Train a model to predict whether a user will default or not
-- The model is not expected to be perfectly accurate and precise, but instead try to build a simple one involving fewer features based on the limited time frame
-- Evaluate the performance of model
-
-## Requirements
-
-- [ ] Jupyter Notebook for Exploratory Data Analysis
-- [ ] Jupyter Notebook for Prediction Modeling
-- [ ] Implementation in Python of a simple data model that can be trained and predict whether a user will default or not, let us know if you prefer something other than Python
-
-## Optional
-
-- [ ] Draft a plan with multiple phases of work on how to tackle the problem, let us know what are the tradeoffs and considerations
-- [ ] Let us know what improvements can be made if we have more time and resources
-
-## Deliverable
-
-- [ ] Jupyter Notebooks (Hosted on Github, Bitbucket, etc.)
-- [ ] Documentation on how to run the them
-
-## Grading and Submission Requirements
-
-- Graded based on thought process and completeness of modeling work flow. The model will only be expected to perform reasonably accurate and precise within limited time.
-
-## Data Dictionary
-
-| Data | Definition | Value(s) |
-| --- | --- | --- |
-| ID | ID of each client | |
-| LIMIT_BAL | Amount of given credit in NT dollars (includes individual and family/supplementary credit | |
-| SEX | Gender | (1=male, 2=female) |
-| EDUCATION | Education | (1=graduate school, 2=university, 3=high school, 4=others, 5=unknown, 6=unknown) |
-| MARRIAGE | Marital status | (1=married, 2=single, 3=others) |
-| AGE | Age in years | |
-| PAY_0 | Repayment status in September, 2005 | (-1=pay duly, 1=payment delay for one month, 2=payment delay for two months, … 8=payment delay for eight months, 9=payment delay for nine months and above) |
-| PAY_2 | Repayment status in August, 2005 | (scale same as above) |
-| PAY_3 | Repayment status in July, 2005 | (scale same as above) |
-| PAY_4 | Repayment status in June, 2005 | (scale same as above) |
-| PAY_5 | Repayment status in May, 2005 | (scale same as above) |
-| PAY_6 | Repayment status in April, 2005 | (scale same as above) |
-| BILL_AMT1 | Amount of bill statement in September, 2005 (NT dollar) | |
-| BILL_AMT2 | Amount of bill statement in August, 2005 (NT dollar) | |
-| BILL_AMT3 | Amount of bill statement in July, 2005 (NT dollar) | |
-| BILL_AMT4 | Amount of bill statement in June, 2005 (NT dollar) | |
-| BILL_AMT5 | Amount of bill statement in May, 2005 (NT dollar) | |
-| BILL_AMT6 | Amount of bill statement in April, 2005 (NT dollar) | |
-| PAY_AMT1 | Amount of previous payment in September, 2005 (NT dollar) | |
-| PAY_AMT2 | Amount of previous payment in August, 2005 (NT dollar) | |
-| PAY_AMT3 | Amount of previous payment in July, 2005 (NT dollar) | |
-| PAY_AMT4 | Amount of previous payment in June, 2005 (NT dollar) | |
-| PAY_AMT5 | Amount of previous payment in May, 2005 (NT dollar) | |
-| PAY_AMT6 | Amount of previous payment in April, 2005 (NT dollar) | |
-| default.payment.next.month | Default payment | (1=yes, 0=no) | |
+## Jupyter Notebook for Prediction Modeling
+1. Load model and set up
+2. Model the 6 selected features on a few other models 
+    - tune hyper parameters
+    - select the best model with k fold cross validation.
+3. Tune probability threshold to improve accuracy
+4. Show model performance
