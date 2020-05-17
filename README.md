@@ -1,6 +1,5 @@
 
-## How to run the Jupyter Notebooks
-### python 3.6.7 package requirement:
+## Python 3.6.7 package requirement:
 ppnope==0.1.0
 backcall==0.1.0
 certifi==2020.4.5.1
