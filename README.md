@@ -40,7 +40,9 @@ urllib3==1.25.9
 wcwidth==0.1.9
 
 
-## Jupyter Notebook for Exploratory Data Analysis
+## Jupyter Notebook for Exploratory Data Analysis (EDA)
+File: Exploratory Data Analysis.ipynb
+
 1. Load data and check columns
 2. Calculate the percentage of credit card defaults out of all the users
 3. Explore the whole dataset and find any interesting insights. At the same time, 
@@ -53,7 +55,9 @@ wcwidth==0.1.9
 
 
 ## Jupyter Notebook for Prediction Modeling
-1. Load model and set up
+File: Prediction Model.ipynb
+
+1. Load model and set up (df_trans.pkl: transformed data produced in EDA)
 2. Model the 6 selected features on a few other models 
     - tune hyper parameters
     - select the best model with k fold cross validation.
