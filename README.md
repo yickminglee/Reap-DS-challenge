@@ -64,11 +64,7 @@ File: Prediction Model.ipynb
 3. Tune probability threshold to improve accuracy
 4. Show model performance
 
-## If I had more time, I would like to ...
-- work with the data provider to understand some of the weird labelling (-2 in pay) and abnormal values (negative billing amount).
-- use various techniques to deal with the imbalance sample, such as class weight and upsampling.
-- find a better way to deal with time series data, rather than eliminating all of them.
-- try out a few more classification algorithms. 
+
 
 
 
